@@ -9,8 +9,8 @@ export interface Company {
   id: string;
   name: string;
   cnpj: string;
-  state_inscription?: string;
-  municipal_inscription?: string;
+  state_inscription?: string | null;
+  municipal_inscription?: string | null;
   state: string;
   city: string;
   user_id: string;

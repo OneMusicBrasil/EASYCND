@@ -121,8 +121,8 @@ export const CompanyModal: React.FC<CompanyModalProps> = ({
     const companyData = {
       name,
       cnpj,
-      state_inscription: stateInscription || undefined,
-      municipal_inscription: municipalInscription || undefined,
+      state_inscription: stateInscription || null,
+      municipal_inscription: municipalInscription || null,
       state,
       city,
     };
