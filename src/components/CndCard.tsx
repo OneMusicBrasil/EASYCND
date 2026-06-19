@@ -145,11 +145,12 @@ export const CndCard: React.FC<CndCardProps> = ({
               href={currentCert.file_url}
               target="_blank"
               rel="noopener noreferrer"
+              download
               className="btn btn-secondary cardActionBtn"
               style={{ gap: '0.375rem' }}
             >
               <Download size={16} />
-              Visualizar
+              Baixar PDF
             </a>
           </>
         )}
@@ -160,7 +161,7 @@ export const CndCard: React.FC<CndCardProps> = ({
           style={{ gap: '0.375rem' }}
         >
           <UploadCloud size={16} />
-          {currentCert ? 'Atualizar' : 'Enviar PDF'}
+          {currentCert ? 'Renovar' : 'Enviar PDF'}
         </button>
       </div>
     </article>

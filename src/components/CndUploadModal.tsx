@@ -119,7 +119,11 @@ export const CndUploadModal: React.FC<CndUploadModalProps> = ({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!certificateId || !activeCompany) return;
+    if (!activeCompany) {
+      addToast('Você precisa cadastrar e selecionar uma empresa primeiro.', 'error');
+      return;
+    }
+    if (!certificateId) return;
     if (!file) {
       addToast('Por favor, selecione um arquivo PDF.', 'warning');
       return;

@@ -219,7 +219,7 @@ export const CompanyModal: React.FC<CompanyModalProps> = ({
         {/* State Inscription & Municipal Inscription */}
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
           <div className="form-group">
-            <label className="form-label" htmlFor="state-inscription">Inscrição Estadual</label>
+            <label className="form-label" htmlFor="state-inscription">Inscrição Estadual (Opcional)</label>
             <div style={{ position: 'relative' }}>
               <Landmark 
                 size={16} 
@@ -239,7 +239,7 @@ export const CompanyModal: React.FC<CompanyModalProps> = ({
           </div>
 
           <div className="form-group">
-            <label className="form-label" htmlFor="municipal-inscription">Inscrição Municipal</label>
+            <label className="form-label" htmlFor="municipal-inscription">Inscrição Municipal (Opcional)</label>
             <div style={{ position: 'relative' }}>
               <Landmark 
                 size={16} 

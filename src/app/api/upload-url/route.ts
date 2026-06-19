@@ -38,6 +38,7 @@ export async function POST(request: Request) {
         accessKeyId: r2AccessKey,
         secretAccessKey: r2SecretKey,
       },
+      forcePathStyle: true,
     });
 
     const fileKey = `${companyId}/${certificateId}/${Date.now()}-${filename}`;
